@@ -1,19 +1,21 @@
 package puppy
 
-import "github.com/GoesToEleven/dog"
+import (
+	"github.com/Ng1n3/dog"
+)
 
 func Bark() string {
 	return "Woof!"
 }
 
-func  Barks() string {
-  return "Woof! woof! woof!"
+func Barks() string {
+	return "Woof! woof! woof!"
 }
 
 func BigBark() string {
-  return dog.WhenGrownUp(Bark())
+	return dog.WhenGrownUp(Bark())
 }
 
 func BigBarks() string {
-  return dog.WhenGrownUp(Barks())
+	return dog.WhenGrownUp((Barks()))
 }
